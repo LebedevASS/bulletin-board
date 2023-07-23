@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=1200">
+    <title>Доска объявлений</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inside container d-flex-sb al-item-cent">
+            <img src="images/Logo.png">
+            <div class="header__login-search d-flex-sb">
+                <button class="header__login d-flex-sb al-item-cent">
+                    <img src="images/LK.png">
+                    <span class= "header__login-btn" href="">Войти</span>
+                </button>
+                <form class="header__search">
+                    <input class="header__search-input" type="text" placeholder="">
+                    <button class="header__search-button" type="submit"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="main --bg-pale-grey">
+        <div class="main__inside container d-flex">
+            <aside class="main__aside --bg-white">
+                <div class="main__user-info d-flex --border_bot">
+                    <img class="main__user-avatar" src="images/А.png">
+                    <div class="main__user-name">
+                        <h3>Алексей У.</h3>
+                        <span>Личный кабинет</span>
+                    </div>
+                </div>
+                <div class="main__left-menu">
+                    <a class="d-flex-sb" href="#">
+                        <img src="images/book.svg" alt="">
+                        <span>Объявления</span>
+                    </a>
+                    <button class="main__exit d-flex-sb al-item-cent"><img src="images/exit.svg" alt="">Выход</button>
+                </div>
+            </aside> 
+            <!-- Объявления -->  
+            <section class="ads main__ads">
+                <div class="ads__header d-flex-sb --border_bot">
+                    <div class="ads__title">
+                        <h2 class="ads__title-h2">   Объявления</h2>
+                        <span class="ads__number">Всего: 45</span>
+                    </div>
+                    <button class="btn-add ads__btn-add d-flex-sb al-item-cent --bg-blue">
+                        Добавить   <img src="images/plus.svg" alt="">
+                    </button>
+                </div>
+                <!-- Навигация c дивом " форма поиска и кнопка" и дивом"№стр со стрелками" -->
+                <nav class="ads__nav d-flex-sb al-item-cent">
+                    <div class="ads__inside d-flex-sb">
+                        <form class="ads__find-ads"> 
+                            <input class="ads__find-ads-input" type="text" placeholder="Найти объявление">
+                            <button class="ads__find-ads-button"type="submit"></button>
+                        </form>
+                        <button class="filter ads__filter d-flex-sb al-item-cent">
+                            Фильтровать  <img src="images/filter.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="ads__nav-number" >
+                        <span>1-8 из 145</span>
+                        <a href="#"><img src="images/Vector-left.png"></a>
+                        <a href="#"><img src="images/Vector-right.png"></a>
+                    </div>
+                </nav>
+                <!-- Block список объявлений-->
+                <div class="ads__product-cards">
+                    <!-- Блок заголовок -->
+                    <div class="ads__product-cards-title al-item-cent d-grid-col-4 --bg-white">
+                        <select>
+                            <option>Название объявления</option>
+                        </select>
+                        <span>Категория</span>
+                        <span>Дата публикации</span>
+                        <span>Публикация</span>
+                    </div>
+                    <div class="ads__product-card al-item-cent d-grid-col-4 --bg-white">
+                        <!-- 1 fr (название) + 3 колонки -->
+                        <span class="ads__product-item ads__product-card_title_bold">Чепчик</span>
+                        <span>Одежда</span>
+                        <span>12 сентября 2020</span>
+                        <span class="ads__product-item d-flex-sb al-item-cent">Да <button class=""><img src="images/more.svg"></button></span>
+                    </div>
+                    <div class="ads__product-card al-item-cent d-grid-col-4 --bg-white">
+                        <!-- 1 fr (название) + 3 колонки -->
+                        <span class="ads__product-item ads__product-card_title_bold">Самовар</span>
+                        <span>Посуда</span>
+                        <span>12 сентября 2020</span>
+                        <span class="ads__product-item d-flex-sb al-item-cent">Да <button class=""><img src="images/more.svg"></button></span>   
+                    </div>
+                    <div class="ads__product-card al-item-cent d-grid-col-4 --bg-white">
+                        <!-- 1 fr (название) + 3 колонки -->
+                        <span class="ads__product-item ads__product-card_title_bold">Стиральная машина</span>
+                        <span>Техника</span>
+                        <span>12 сентября 2020</span>
+                        <span class="ads__product-item d-flex-sb al-item-cent">Да <button class=""><img src="images/more.svg"></button></span>
+                    </div>
+                    <div class="ads__product-card al-item-cent d-grid-col-4 --bg-white">
+                       <!-- 1 fr (название) + 3 колонки -->
+                        <span class="ads__product-item ads__product-card_title_bold">Часы Rolex</span>
+                        <span></span>
+                        <span>12 сентября 2020</span>
+                        <span class="ads__product-item d-flex-sb al-item-cent">Да <button class=""><img src="images/more.svg"></button></span>
+                    </div>
+                    <div class="ads__product-card al-item-cent d-grid-col-4 --bg-white">
+                        <!-- 1 fr (название) + 3 колонки -->
+                        <span class="ads__product-item ads__product-card_title_bold">Lada Kalina</span>
+                        <span>Авто</span>
+                        <span>12 сентября 2020</span>
+                        <span class="ads__product-item d-flex-sb al-item-cent">Да <button class=""><img src="images/more.svg"></button></span>
+                    </div>
+                    <div class="ads__product-card al-item-cent d-grid-col-4 --bg-white">
+                        <!-- 1 fr (название) + 3 колонки -->
+                        <span class="ads__product-item ads__product-card_title_bold">Спортивный велосипед</span>
+                        <span class="ads__product-item"></span>
+                        <span class="ads__product-item">12 сентября 2020</span>
+                        <span class="ads__product-item d-flex-sb al-item-cent">Да <button class=""><img src="images/more.svg"></button></span>   
+                    </div>
+                    <div class="ads__product-card al-item-cent d-grid-col-4 --bg-white">
+                       <!-- 1 fr (название) + 3 колонки -->
+                        <span class="ads__product-item ads__product-card_title_bold">Ботинки поношенные</span>
+                        <span>Обувь</span>
+                        <span>12 сентября 2020</span>
+                        <span class="ads__product-item d-flex-sb al-item-cent">Да <button class=""><img src="images/more.svg"></button></span>
+                    </div>
+                    <div class="ads__product-card al-item-cent d-grid-col-4 --bg-white">
+                        <!-- 1 fr (название) + 3 колонки -->
+                        <span class="ads__product-item ads__product-card_title_bold">Приставка Dendy</span>
+                        <span>Техника</span>
+                        <span>12 сентября 2020</span>
+                        <span class="ads__product-item d-flex-sb al-item-cent">Да <button class=""><img src="images/more.svg"></button></span>
+                    </div>
+                </div>  <!-- Окончание блока продуктовые карточки-->
+            </section>
+        </div> 
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__footer-top d-flex-sb al-item-cent">
+                <div class="footer__logo-bottom d-flex">
+                    <img src="images/logo.svg">
+                    <span><br>Доска объявлений</span>
+                </div>
+                <div class="footer__social-icons d-flex al-item-cent">
+                    <div class="footer__icon-facebook social-icon">
+                        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    </div>
+                    <div class="footer__icon-Inst social-icon">
+                        <a href="#"><img src="images/instagram.png" alt="Inst"></a>
+                    </div>
+                    <div class="footer__icon-VK social-icon">
+                        <a href="#"><img src="images/VK.png" alt="VK"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__footer-bot d-flex-sb">
+                <span>ООО "Доска Диджитал", 2022</span>
+                <a href="#">Политика конфиденциальности</a>
+                <span>support@doska.ru</span>
+                <span>8 800 000 00 00</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
